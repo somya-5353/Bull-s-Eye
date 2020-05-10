@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="30" id="YJb-Ph-vt1"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="asn-h0-oC7"/>
+                                    <action selector="getSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="P16-yF-Me8"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the Bull's Eye as close as you can to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-a7-CqX" userLabel="TitleLabel">
@@ -40,12 +40,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xqa-7c-MAa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duX-D8-JWV" userLabel="TargetLabel">
-                                <rect key="frame" x="722" y="40" width="90" height="30"/>
+                                <rect key="frame" x="717" y="40" width="95" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DcD-kM-lqn"/>
                                 </constraints>
@@ -105,7 +105,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M30-s9-KNx" userLabel="ScoreValueLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M30-s9-KNx" userLabel="ScoreValueLabel">
                                 <rect key="frame" x="317" y="323" width="75" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="5WL-t1-xXG"/>
@@ -115,7 +115,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-uB-7ww" userLabel="RoundValueLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-uB-7ww" userLabel="RoundValueLabel">
                                 <rect key="frame" x="652" y="323" width="75" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Iga-3L-ZBa"/>
@@ -126,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl0-Vq-88i" userLabel="RoundTitleLabel">
-                                <rect key="frame" x="574" y="323" width="70" height="40"/>
+                                <rect key="frame" x="580" y="323" width="70" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="MpO-Pv-Jq7"/>
                                     <constraint firstAttribute="height" constant="40" id="kcA-Wz-D3t"/>
@@ -141,7 +141,7 @@
                             <constraint firstItem="Dne-a7-CqX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="3m2-Zf-g9j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M30-s9-KNx" secondAttribute="bottom" constant="30" id="7Qv-FV-VGO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Fm-Ey-V2M" secondAttribute="trailing" constant="15" id="8s0-E2-zt9"/>
-                            <constraint firstItem="RWO-uB-7ww" firstAttribute="leading" secondItem="dl0-Vq-88i" secondAttribute="trailing" constant="8" id="AqH-3s-a6S"/>
+                            <constraint firstItem="RWO-uB-7ww" firstAttribute="leading" secondItem="dl0-Vq-88i" secondAttribute="trailing" constant="2" id="AqH-3s-a6S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZOi-Jy-uHr" secondAttribute="bottom" constant="30" id="CfG-N6-lqU"/>
                             <constraint firstItem="Idg-Ay-WMM" firstAttribute="leading" secondItem="bQc-tx-NtF" secondAttribute="trailing" constant="7" id="JGx-bo-cRU"/>
                             <constraint firstItem="bQc-tx-NtF" firstAttribute="leading" secondItem="Fxr-OV-gea" secondAttribute="trailing" constant="2" id="Lj0-Wa-hRN"/>
@@ -149,7 +149,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dne-a7-CqX" secondAttribute="trailing" constant="140" id="V4C-lX-aCI"/>
                             <constraint firstItem="kYo-iL-DzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="XHY-gt-O67"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQc-tx-NtF" secondAttribute="trailing" constant="60" id="XUS-7G-WSa"/>
-                            <constraint firstItem="duX-D8-JWV" firstAttribute="leading" secondItem="Dne-a7-CqX" secondAttribute="trailing" constant="10" id="Xrn-hK-cPa"/>
+                            <constraint firstItem="duX-D8-JWV" firstAttribute="leading" secondItem="Dne-a7-CqX" secondAttribute="trailing" constant="5" id="Xrn-hK-cPa"/>
                             <constraint firstItem="duX-D8-JWV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="aOG-y0-WeR"/>
                             <constraint firstItem="7Fm-Ey-V2M" firstAttribute="leading" secondItem="RWO-uB-7ww" secondAttribute="trailing" constant="60" id="baD-Q2-QAy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RWO-uB-7ww" secondAttribute="bottom" constant="30" id="cyv-Lh-IDy"/>
@@ -170,9 +170,10 @@
                     </view>
                     <connections>
                         <outlet property="roundTitle" destination="dl0-Vq-88i" id="0Ia-Rt-A0Y"/>
-                        <outlet property="roundValue" destination="dl0-Vq-88i" id="Qbq-lE-PGq"/>
+                        <outlet property="roundValue" destination="RWO-uB-7ww" id="g5b-gs-e7h"/>
                         <outlet property="scoreTitle" destination="ZOi-Jy-uHr" id="u3C-wT-9E2"/>
                         <outlet property="scoreValue" destination="M30-s9-KNx" id="4bO-1O-9rr"/>
+                        <outlet property="slider" destination="bQc-tx-NtF" id="nBT-3g-Ahu"/>
                         <outlet property="slider1Label" destination="Idg-Ay-WMM" id="LyW-Nt-QtE"/>
                         <outlet property="slider2Label" destination="Fxr-OV-gea" id="HZj-qA-DtT"/>
                         <outlet property="targetLabel" destination="duX-D8-JWV" id="u6H-xG-eWt"/>
