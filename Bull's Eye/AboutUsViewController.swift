@@ -19,6 +19,7 @@ class AboutUsViewController: UIViewController {
 
     @IBAction func closeAboutUs(_ sender: Any) {
         
+        //added to dismiss the view controller
         dismiss(animated: true, completion: nil)
     }
    
