@@ -204,22 +204,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="Rto-VW-Cc1">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-YM-0HO">
                                 <rect key="frame" x="60" y="40" width="776" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Welcome to the awesome game of Bull's Eye.  You can win points by dragging the slider as close to the target as you can. The closer your guess is, the more points you win.!! Get started now !</string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="41"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-5M-c2d">
-                                <rect key="frame" x="394" y="323" width="108" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-5M-c2d">
+                                <rect key="frame" x="374" y="323" width="148" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MGi-6X-tte"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Close"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="closeAboutUs:" destination="MDv-wq-3tG" eventType="touchUpInside" id="yKD-AP-gLN"/>
                                 </connections>
@@ -227,9 +234,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NFd-tO-sGs" firstAttribute="trailing" secondItem="Ytb-5M-c2d" secondAttribute="trailing" constant="350" id="BMh-us-cAj"/>
-                            <constraint firstItem="Ytb-5M-c2d" firstAttribute="leading" secondItem="NFd-tO-sGs" secondAttribute="leading" constant="350" id="GhQ-sX-NB1"/>
+                            <constraint firstItem="NFd-tO-sGs" firstAttribute="trailing" secondItem="Ytb-5M-c2d" secondAttribute="trailing" constant="330" id="BMh-us-cAj"/>
+                            <constraint firstItem="Ytb-5M-c2d" firstAttribute="leading" secondItem="NFd-tO-sGs" secondAttribute="leading" constant="330" id="GhQ-sX-NB1"/>
                             <constraint firstItem="NFd-tO-sGs" firstAttribute="bottom" secondItem="Ytb-5M-c2d" secondAttribute="bottom" constant="30" id="Pzb-kA-3r7"/>
+                            <constraint firstItem="Rto-VW-Cc1" firstAttribute="top" secondItem="hEY-Q6-p5A" secondAttribute="top" id="RtS-C4-yZg"/>
+                            <constraint firstItem="Rto-VW-Cc1" firstAttribute="leading" secondItem="hEY-Q6-p5A" secondAttribute="leading" id="m4V-uI-3tH"/>
+                            <constraint firstAttribute="bottom" secondItem="Rto-VW-Cc1" secondAttribute="bottom" id="yGF-wO-8sE"/>
+                            <constraint firstAttribute="trailing" secondItem="Rto-VW-Cc1" secondAttribute="trailing" id="yec-wI-B5N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NFd-tO-sGs"/>
                     </view>
@@ -246,5 +257,6 @@
         <image name="InfoButton" width="10" height="22"/>
         <image name="SmallButton" width="32" height="32"/>
         <image name="StartOverIcon" width="20" height="20"/>
+        <image name="green" width="3000" height="2000"/>
     </resources>
 </document>

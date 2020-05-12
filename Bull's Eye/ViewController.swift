@@ -33,7 +33,30 @@ class ViewController: UIViewController {
         self.currentValueOfSlider = Int(sliderValue)
         self.scoreValue.text = "0"
         self.startNextRound()
+        self.styleSlider()
+        
     }
+    
+    //style slider
+    func styleSlider() {
+        
+        let imageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(imageNormal, for: .normal)
+        
+        let imageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(imageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackerMinimumImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let resizableImageMin = trackerMinimumImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(resizableImageMin, for: .normal)
+        
+       let trackerMaximumImage = #imageLiteral(resourceName: "SliderTrackRight")
+       let resizableImageMax = trackerMaximumImage.resizableImage(withCapInsets: insets)
+       slider.setMaximumTrackImage(resizableImageMax, for: .normal)
+    }
+    
     
    //showing the alert dialog box on tapping hit me button
     @IBAction func showAlert(_ sender: Any) {
