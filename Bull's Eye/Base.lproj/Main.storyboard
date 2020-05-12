@@ -93,6 +93,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="getInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ie-TJ-DDz"/>
+                                    <segue destination="MDv-wq-3tG" kind="presentation" modalTransitionStyle="flipHorizontal" id="HRG-k8-6ii"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOi-Jy-uHr" userLabel="ScoreTitleLabel">
@@ -183,6 +184,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.60714285714286" y="100.00000000000001"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="Dk2-ml-1Yl">
+            <objects>
+                <viewController id="MDv-wq-3tG" customClass="AboutUsViewController" customModule="Bull_s_Eye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEY-Q6-p5A">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-YM-0HO">
+                                <rect key="frame" x="60" y="40" width="776" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Welcome to the awesome game of Bull's Eye.  You can win points by dragging the slider as close to the target as you can. The closer your guess is, the more points you win.!! Get started now !</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="41"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-5M-c2d">
+                                <rect key="frame" x="394" y="323" width="108" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MGi-6X-tte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeAboutUs:" destination="MDv-wq-3tG" eventType="touchUpInside" id="yKD-AP-gLN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NFd-tO-sGs" firstAttribute="trailing" secondItem="Ytb-5M-c2d" secondAttribute="trailing" constant="350" id="BMh-us-cAj"/>
+                            <constraint firstItem="Ytb-5M-c2d" firstAttribute="leading" secondItem="NFd-tO-sGs" secondAttribute="leading" constant="350" id="GhQ-sX-NB1"/>
+                            <constraint firstItem="NFd-tO-sGs" firstAttribute="bottom" secondItem="Ytb-5M-c2d" secondAttribute="bottom" constant="30" id="Pzb-kA-3r7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NFd-tO-sGs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeZ-eI-ZLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022.5446428571428" y="89.855072463768124"/>
         </scene>
     </scenes>
 </document>

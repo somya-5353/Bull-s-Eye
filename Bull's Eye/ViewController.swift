@@ -94,7 +94,7 @@ class ViewController: UIViewController {
         if  (100 - self.currentScore) == 0 {
            titleForAlert = "Perfect!"
         } else if (100 - self.currentScore) < 5 {
-            titleForAlert = "Great, You are almost there!"
+            titleForAlert = "Great, You were almost there!"
         } else if (100 - self.currentScore) < 10 {
             titleForAlert = "Good Job!"
         } else {
