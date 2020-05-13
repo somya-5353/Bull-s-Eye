@@ -73,7 +73,7 @@
                                 <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
                                 <connections>
                                     <action selector="getInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ie-TJ-DDz"/>
-                                    <segue destination="MDv-wq-3tG" kind="presentation" modalTransitionStyle="flipHorizontal" id="HRG-k8-6ii"/>
+                                    <segue destination="MDv-wq-3tG" kind="presentation" identifier="aboutUs" modalTransitionStyle="flipHorizontal" id="HRG-k8-6ii"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOi-Jy-uHr" userLabel="ScoreTitleLabel">
@@ -241,7 +241,7 @@
                                 </state>
                                 <connections>
                                     <action selector="openRateUs:" destination="MDv-wq-3tG" eventType="touchUpInside" id="ypa-O1-sXe"/>
-                                    <segue destination="fez-8q-NJJ" kind="presentation" modalTransitionStyle="crossDissolve" id="CSk-fh-a8p"/>
+                                    <segue destination="fez-8q-NJJ" kind="presentation" identifier="rateUs" modalTransitionStyle="crossDissolve" id="CSk-fh-a8p"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -293,6 +293,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFU-PF-tE3">
+                                <rect key="frame" x="518" y="308" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Mm-w8-jn2"/>
+                                    <constraint firstAttribute="width" constant="100" id="8EG-UX-WmL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="fez-8q-NJJ" eventType="touchUpInside" id="NQq-Sf-GlQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -301,8 +315,10 @@
                             <constraint firstAttribute="bottom" secondItem="XF6-Uc-F6z" secondAttribute="bottom" id="7ET-Ni-HhX"/>
                             <constraint firstItem="OPm-Dq-Xsa" firstAttribute="leading" secondItem="Jb7-At-hBB" secondAttribute="leading" id="E5m-TI-9I6"/>
                             <constraint firstItem="OPm-Dq-Xsa" firstAttribute="top" secondItem="Jb7-At-hBB" secondAttribute="top" id="Fny-N4-UL4"/>
+                            <constraint firstItem="2dt-6S-irF" firstAttribute="bottom" secondItem="mFU-PF-tE3" secondAttribute="bottom" constant="35" id="GNi-75-vUr"/>
                             <constraint firstItem="lud-dG-QLv" firstAttribute="top" secondItem="2dt-6S-irF" secondAttribute="top" constant="30" id="K1W-DB-Qey"/>
                             <constraint firstAttribute="bottom" secondItem="OPm-Dq-Xsa" secondAttribute="bottom" id="VQu-mG-Mf7"/>
+                            <constraint firstItem="mFU-PF-tE3" firstAttribute="centerX" secondItem="XF6-Uc-F6z" secondAttribute="centerX" id="d94-Gd-gHD"/>
                             <constraint firstItem="XF6-Uc-F6z" firstAttribute="top" secondItem="Jb7-At-hBB" secondAttribute="top" id="eoA-gS-UG7"/>
                             <constraint firstAttribute="trailing" secondItem="XF6-Uc-F6z" secondAttribute="trailing" id="peb-CS-1dx"/>
                         </constraints>
@@ -311,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0OF-Ra-eai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793.2533733133434" y="84"/>
+            <point key="canvasLocation" x="1792.6339285714284" y="82.608695652173921"/>
         </scene>
     </scenes>
     <resources>
