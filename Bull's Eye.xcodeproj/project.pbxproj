@@ -14,6 +14,7 @@
 		EF51FB2F246159220080D20B /* Bull_s_Eye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF51FB2D246159220080D20B /* Bull_s_Eye.xcdatamodeld */; };
 		EF51FB31246159250080D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF51FB30246159250080D20B /* Assets.xcassets */; };
 		EF51FB34246159250080D20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51FB32246159250080D20B /* LaunchScreen.storyboard */; };
+		EFA4326F246C50020017D58E /* RateUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4326E246C50020017D58E /* RateUsViewController.swift */; };
 		EFDB142D246AA5440051E8E6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB142C246AA5440051E8E6 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		EF51FB30246159250080D20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF51FB33246159250080D20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF51FB35246159250080D20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA4326E246C50020017D58E /* RateUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsViewController.swift; sourceTree = "<group>"; };
 		EFDB142C246AA5440051E8E6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				EF51FB26246159220080D20B /* SceneDelegate.swift */,
 				EF51FB28246159220080D20B /* ViewController.swift */,
 				EFDB142C246AA5440051E8E6 /* AboutUsViewController.swift */,
+				EFA4326E246C50020017D58E /* RateUsViewController.swift */,
 				EF51FB2A246159220080D20B /* Main.storyboard */,
 				EF51FB30246159250080D20B /* Assets.xcassets */,
 				EF51FB32246159250080D20B /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				EF51FB29246159220080D20B /* ViewController.swift in Sources */,
 				EF51FB25246159220080D20B /* AppDelegate.swift in Sources */,
 				EF51FB2F246159220080D20B /* Bull_s_Eye.xcdatamodeld in Sources */,
+				EFA4326F246C50020017D58E /* RateUsViewController.swift in Sources */,
 				EF51FB27246159220080D20B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

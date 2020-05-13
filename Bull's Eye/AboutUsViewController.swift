@@ -24,4 +24,7 @@ class AboutUsViewController: UIViewController {
     }
    
 
+    @IBAction func openRateUs(_ sender: Any) {
+        
+    }
 }
