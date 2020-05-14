@@ -21,4 +21,6 @@ class RateUsViewController: UIViewController {
     dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func doneWithRatings(_ sender: Any) {
+    }
 }
