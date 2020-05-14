@@ -41,13 +41,51 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thanks" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-Tg-1A8">
+                                <rect key="frame" x="87" y="374" width="240" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GPf-Cj-TeS"/>
+                                    <constraint firstAttribute="height" constant="100" id="Lpn-BZ-qtx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your feedback." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3I-QH-ZXG">
+                                <rect key="frame" x="87" y="494" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6a0-Qj-9DE"/>
+                                    <constraint firstAttribute="height" constant="30" id="bCb-hh-Ux3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64X-QA-SA7">
+                                <rect key="frame" x="132" y="549" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.08022240549325943" green="0.19664782285690308" blue="0.31292587518692017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1aT-Jb-muh"/>
+                                    <constraint firstAttribute="width" constant="150" id="3fr-7F-yjo"/>
+                                </constraints>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="okPressed:" destination="Dj7-ww-FbF" eventType="touchUpInside" id="dAR-er-UZe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Z3I-QH-ZXG" firstAttribute="top" secondItem="Nk8-Tg-1A8" secondAttribute="bottom" constant="20" id="2M2-dR-UrM"/>
+                            <constraint firstItem="64X-QA-SA7" firstAttribute="top" secondItem="Z3I-QH-ZXG" secondAttribute="bottom" constant="25" id="6M5-U9-1bS"/>
                             <constraint firstItem="30i-or-ILf" firstAttribute="centerY" secondItem="XQN-bN-fMb" secondAttribute="centerY" id="8y6-Qq-MQ9"/>
+                            <constraint firstItem="Nk8-Tg-1A8" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="Foq-2q-QRi"/>
+                            <constraint firstItem="Nk8-Tg-1A8" firstAttribute="top" secondItem="a2H-hd-aOh" secondAttribute="bottom" constant="50" id="Npn-t8-YE4"/>
                             <constraint firstItem="zUD-im-4SS" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="cxg-X9-OyD"/>
                             <constraint firstItem="zUD-im-4SS" firstAttribute="top" secondItem="nph-iL-bt6" secondAttribute="top" constant="229" id="hU8-vG-k95"/>
+                            <constraint firstItem="Z3I-QH-ZXG" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="ipt-o2-dZj"/>
                             <constraint firstItem="30i-or-ILf" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="nJT-k0-z7t"/>
+                            <constraint firstItem="64X-QA-SA7" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="r5L-tT-upR"/>
                             <constraint firstItem="a2H-hd-aOh" firstAttribute="top" secondItem="nph-iL-bt6" secondAttribute="top" constant="240" id="uHY-ny-Oep"/>
                             <constraint firstItem="a2H-hd-aOh" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="yum-MS-EvN"/>
                         </constraints>
@@ -59,4 +97,7 @@
             <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="thanks" width="200" height="188.5"/>
+    </resources>
 </document>
