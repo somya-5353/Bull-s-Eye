@@ -17,6 +17,7 @@
 		EFA4326F246C50020017D58E /* RateUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4326E246C50020017D58E /* RateUsViewController.swift */; };
 		EFA43271246DB94D0017D58E /* RatingPopUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA43270246DB94D0017D58E /* RatingPopUpStoryboard.storyboard */; };
 		EFA43273246DB9B00017D58E /* RatingPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA43272246DB9B00017D58E /* RatingPopUpViewController.swift */; };
+		EFA43275246DCF550017D58E /* HandleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA43274246DCF550017D58E /* HandleAlert.swift */; };
 		EFDB142D246AA5440051E8E6 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB142C246AA5440051E8E6 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		EFA4326E246C50020017D58E /* RateUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsViewController.swift; sourceTree = "<group>"; };
 		EFA43270246DB94D0017D58E /* RatingPopUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RatingPopUpStoryboard.storyboard; sourceTree = "<group>"; };
 		EFA43272246DB9B00017D58E /* RatingPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingPopUpViewController.swift; sourceTree = "<group>"; };
+		EFA43274246DCF550017D58E /* HandleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleAlert.swift; sourceTree = "<group>"; };
 		EFDB142C246AA5440051E8E6 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				EF51FB2D246159220080D20B /* Bull_s_Eye.xcdatamodeld */,
 				EFA43270246DB94D0017D58E /* RatingPopUpStoryboard.storyboard */,
 				EFA43272246DB9B00017D58E /* RatingPopUpViewController.swift */,
+				EFA43274246DCF550017D58E /* HandleAlert.swift */,
 			);
 			path = "Bull's Eye";
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA43275246DCF550017D58E /* HandleAlert.swift in Sources */,
 				EFDB142D246AA5440051E8E6 /* AboutUsViewController.swift in Sources */,
 				EF51FB29246159220080D20B /* ViewController.swift in Sources */,
 				EFA43273246DB9B00017D58E /* RatingPopUpViewController.swift in Sources */,
