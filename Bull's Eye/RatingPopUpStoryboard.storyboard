@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rating Pop Up View Controller-->
+        <scene sceneID="aCy-54-oNR">
+            <objects>
+                <viewController storyboardIdentifier="rating" id="Dj7-ww-FbF" customClass="RatingPopUpViewController" customModule="Bull_s_Eye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQN-bN-fMb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30i-or-ILf">
+                                <rect key="frame" x="69.5" y="273" width="275" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="H0c-I2-Cq9"/>
+                                    <constraint firstAttribute="height" constant="350" id="jkP-Oh-Vh5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-im-4SS">
+                                <rect key="frame" x="69.5" y="273" width="275" height="75"/>
+                                <color key="backgroundColor" red="0.08022240549325943" green="0.19664782285690308" blue="0.31292587518692017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="LSp-25-fxQ"/>
+                                    <constraint firstAttribute="height" constant="75" id="vqt-Gj-wyo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2H-hd-aOh">
+                                <rect key="frame" x="132" y="284" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="f2L-Mx-0cG"/>
+                                    <constraint firstAttribute="height" constant="40" id="loc-SK-xtf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="30i-or-ILf" firstAttribute="centerY" secondItem="XQN-bN-fMb" secondAttribute="centerY" id="8y6-Qq-MQ9"/>
+                            <constraint firstItem="zUD-im-4SS" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="cxg-X9-OyD"/>
+                            <constraint firstItem="zUD-im-4SS" firstAttribute="top" secondItem="nph-iL-bt6" secondAttribute="top" constant="229" id="hU8-vG-k95"/>
+                            <constraint firstItem="30i-or-ILf" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="nJT-k0-z7t"/>
+                            <constraint firstItem="a2H-hd-aOh" firstAttribute="top" secondItem="nph-iL-bt6" secondAttribute="top" constant="240" id="uHY-ny-Oep"/>
+                            <constraint firstItem="a2H-hd-aOh" firstAttribute="centerX" secondItem="XQN-bN-fMb" secondAttribute="centerX" id="yum-MS-EvN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nph-iL-bt6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aw7-VM-suA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
+        </scene>
+    </scenes>
+</document>
