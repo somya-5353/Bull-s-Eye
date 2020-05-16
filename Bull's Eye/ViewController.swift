@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         
         let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
         
-        let trackerMinimumImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackerMinimumImage = #imageLiteral(resourceName: "slider")
         let resizableImageMin = trackerMinimumImage.resizableImage(withCapInsets: insets)
         slider.setMinimumTrackImage(resizableImageMin, for: .normal)
         
