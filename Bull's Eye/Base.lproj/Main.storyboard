@@ -207,9 +207,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="TtH-cB-0iv"/>
                                 </constraints>
-                                <string key="text">Welcome to the awesome game of Bull's Eye.  You can win points by dragging the slider as close to the target as you can. The closer your guess is, the more points you win.!! Get started now !</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-5M-c2d">
@@ -260,6 +259,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NFd-tO-sGs"/>
                     </view>
+                    <connections>
+                        <outlet property="aboutUs" destination="dR1-YM-0HO" id="5Pa-QN-jNl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeZ-eI-ZLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

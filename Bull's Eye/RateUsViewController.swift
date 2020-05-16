@@ -16,19 +16,16 @@ class RateUsViewController: UIViewController {
     @IBOutlet weak var star2: UIButton!
     @IBOutlet weak var star5: UIButton!
     
-    var tap1 = true
-    var tap2 = true
-    var tap3 = true
-    var tap4 = true
-    var tap5 = true
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        star1.isUserInteractionEnabled = true
+        star2.isUserInteractionEnabled = false
+        star3.isUserInteractionEnabled = false
+        star4.isUserInteractionEnabled = false
+        star5.isUserInteractionEnabled = false
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func close(_ sender: Any) {
         
     dismiss(animated: true, completion: nil)
@@ -43,48 +40,35 @@ class RateUsViewController: UIViewController {
     }
     
     @IBAction func star1Tap(_ sender: Any) {
-        if self.tap1 == true {
-           star1.setImage(UIImage(named: "filledStar"), for: .normal)
-        } else {
-           star1.setImage(UIImage(named: "emptyStar"), for: .normal)
-        }
-        self.tap1 = !self.tap1
+       star1.setImage(UIImage(named: "filledStar"), for: .normal)
+       star2.isUserInteractionEnabled = true
     }
     
     @IBAction func star2Tap(_ sender: Any) {
-      if self.tap2 == true {
-         star2.setImage(UIImage(named: "filledStar"), for: .normal)
-      } else {
-         star2.setImage(UIImage(named: "emptyStar"), for: .normal)
-      }
-      self.tap2 = !self.tap2
+        if star2.isUserInteractionEnabled == true {
+           star2.setImage(UIImage(named: "filledStar"), for: .normal)
+           star3.isUserInteractionEnabled = true
+        }
     }
     
     @IBAction func star3Tap(_ sender: Any) {
-      if self.tap3 == true {
-         star3.setImage(UIImage(named: "filledStar"), for: .normal)
-      } else {
-         star3.setImage(UIImage(named: "emptyStar"), for: .normal)
-      }
-      self.tap3 = !self.tap3
+        if star3.isUserInteractionEnabled == true {
+           star3.setImage(UIImage(named: "filledStar"), for: .normal)
+           star4.isUserInteractionEnabled = true
+        }
     }
     
     @IBAction func star4Tap(_ sender: Any) {
-     if self.tap4 == true {
-        star4.setImage(UIImage(named: "filledStar"), for: .normal)
-     } else {
-        star4.setImage(UIImage(named: "emptyStar"), for: .normal)
-     }
-     self.tap4 = !self.tap4
+        if star4.isUserInteractionEnabled == true {
+           star4.setImage(UIImage(named: "filledStar"), for: .normal)
+           star5.isUserInteractionEnabled = true
+        }
     }
     
     @IBAction func star5Tap(_ sender: Any) {
-     if self.tap5 == true {
-        star5.setImage(UIImage(named: "filledStar"), for: .normal)
-     } else {
-        star5.setImage(UIImage(named: "emptyStar"), for: .normal)
-     }
-    self.tap5 = !self.tap5
+        if star5.isUserInteractionEnabled == true {
+           star5.setImage(UIImage(named: "filledStar"), for: .normal)
+        }
     }
     
 }
