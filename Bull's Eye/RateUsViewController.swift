@@ -9,6 +9,13 @@
 import UIKit
 
 class RateUsViewController: UIViewController {
+    
+    @IBOutlet weak var star1: UIButton!
+    @IBOutlet weak var star4: UIButton!
+    @IBOutlet weak var star3: UIButton!
+    @IBOutlet weak var star2: UIButton!
+    @IBOutlet weak var star5: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +28,32 @@ class RateUsViewController: UIViewController {
     dismiss(animated: true, completion: nil)
     }
     
+     let handleAlert = HandleAlert()
+    
     @IBAction func doneWithRatings(_ sender: Any) {
+        
+        let ratingVC = handleAlert.displayAlert()
+        present(ratingVC, animated: true)
     }
+    
+    @IBAction func star1Tap(_ sender: Any) {
+      star1.setImage(UIImage(named: "filledStar"), for: .normal)
+    }
+    
+    @IBAction func star2Tap(_ sender: Any) {
+      star2.setImage(UIImage(named: "filledStar"), for: .normal)
+    }
+    
+    @IBAction func star3Tap(_ sender: Any) {
+      star3.setImage(UIImage(named: "filledStar"), for: .normal)
+    }
+    
+    @IBAction func star4Tap(_ sender: Any) {
+     star4.setImage(UIImage(named: "filledStar"), for: .normal)
+    }
+    
+    @IBAction func star5Tap(_ sender: Any) {
+     star5.setImage(UIImage(named: "filledStar"), for: .normal)
+    }
+    
 }

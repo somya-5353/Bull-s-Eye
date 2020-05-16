@@ -11,7 +11,7 @@ import UIKit
 
 class HandleAlert {
     
-    func dislayAlert() -> RatingPopUpViewController {
+    func displayAlert() -> RatingPopUpViewController {
         
         let storyboard = UIStoryboard(name: "RatingPopUpStoryboard", bundle: .main)
         let ratingVC = storyboard.instantiateViewController(identifier: "rating") as! RatingPopUpViewController

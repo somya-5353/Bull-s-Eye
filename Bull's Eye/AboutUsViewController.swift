@@ -27,7 +27,5 @@ class AboutUsViewController: UIViewController {
 
     @IBAction func openRateUs(_ sender: Any) {
         
-        let ratingVC = handleAlert.dislayAlert()
-        present(ratingVC, animated: true)
     }
 }
