@@ -16,6 +16,12 @@ class RateUsViewController: UIViewController {
     @IBOutlet weak var star2: UIButton!
     @IBOutlet weak var star5: UIButton!
     
+    var tap1 = true
+    var tap2 = true
+    var tap3 = true
+    var tap4 = true
+    var tap5 = true
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +43,48 @@ class RateUsViewController: UIViewController {
     }
     
     @IBAction func star1Tap(_ sender: Any) {
-      star1.setImage(UIImage(named: "filledStar"), for: .normal)
+        if self.tap1 == true {
+           star1.setImage(UIImage(named: "filledStar"), for: .normal)
+        } else {
+           star1.setImage(UIImage(named: "emptyStar"), for: .normal)
+        }
+        self.tap1 = !self.tap1
     }
     
     @IBAction func star2Tap(_ sender: Any) {
-      star2.setImage(UIImage(named: "filledStar"), for: .normal)
+      if self.tap2 == true {
+         star2.setImage(UIImage(named: "filledStar"), for: .normal)
+      } else {
+         star2.setImage(UIImage(named: "emptyStar"), for: .normal)
+      }
+      self.tap2 = !self.tap2
     }
     
     @IBAction func star3Tap(_ sender: Any) {
-      star3.setImage(UIImage(named: "filledStar"), for: .normal)
+      if self.tap3 == true {
+         star3.setImage(UIImage(named: "filledStar"), for: .normal)
+      } else {
+         star3.setImage(UIImage(named: "emptyStar"), for: .normal)
+      }
+      self.tap3 = !self.tap3
     }
     
     @IBAction func star4Tap(_ sender: Any) {
-     star4.setImage(UIImage(named: "filledStar"), for: .normal)
+     if self.tap4 == true {
+        star4.setImage(UIImage(named: "filledStar"), for: .normal)
+     } else {
+        star4.setImage(UIImage(named: "emptyStar"), for: .normal)
+     }
+     self.tap4 = !self.tap4
     }
     
     @IBAction func star5Tap(_ sender: Any) {
-     star5.setImage(UIImage(named: "filledStar"), for: .normal)
+     if self.tap5 == true {
+        star5.setImage(UIImage(named: "filledStar"), for: .normal)
+     } else {
+        star5.setImage(UIImage(named: "emptyStar"), for: .normal)
+     }
+    self.tap5 = !self.tap5
     }
     
 }
