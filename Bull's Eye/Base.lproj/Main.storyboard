@@ -175,6 +175,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hitMeConstraint" destination="2ki-Wm-rEN" id="f1L-wf-Ebi"/>
                         <outlet property="roundTitle" destination="dl0-Vq-88i" id="0Ia-Rt-A0Y"/>
                         <outlet property="roundValue" destination="RWO-uB-7ww" id="g5b-gs-e7h"/>
                         <outlet property="scoreTitle" destination="ZOi-Jy-uHr" id="u3C-wT-9E2"/>

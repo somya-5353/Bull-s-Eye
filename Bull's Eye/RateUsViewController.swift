@@ -64,15 +64,35 @@ class RateUsViewController: UIViewController {
         present(ratingVC, animated: true)
     }
     
+    func animateButtons(_ theButton: UIButton) {
+
+        let bounds = theButton.bounds
+        let height = bounds.size.height + 10
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: .curveEaseOut, animations: {
+                   theButton.bounds = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.size.width, height: height)
+               },completion: { success in
+                   if success {
+                       UIView.animate(withDuration: 1, animations: {
+                           theButton.bounds = bounds
+                       })
+                   }
+               })
+    }
+    
+    
     @IBAction func star1Tap(_ sender: Any) {
        star1.setImage(UIImage(named: "filledStar"), for: .normal)
        star2.isUserInteractionEnabled = true
+       let theButton = sender as! UIButton
+       self.animateButtons(theButton)
     }
     
     @IBAction func star2Tap(_ sender: Any) {
         if star2.isUserInteractionEnabled == true {
            star2.setImage(UIImage(named: "filledStar"), for: .normal)
            star3.isUserInteractionEnabled = true
+           let theButton = sender as! UIButton
+           self.animateButtons(theButton)
         }
     }
     
@@ -80,6 +100,8 @@ class RateUsViewController: UIViewController {
         if star3.isUserInteractionEnabled == true {
            star3.setImage(UIImage(named: "filledStar"), for: .normal)
            star4.isUserInteractionEnabled = true
+           let theButton = sender as! UIButton
+           self.animateButtons(theButton)
         }
     }
     
@@ -87,12 +109,16 @@ class RateUsViewController: UIViewController {
         if star4.isUserInteractionEnabled == true {
            star4.setImage(UIImage(named: "filledStar"), for: .normal)
            star5.isUserInteractionEnabled = true
+           let theButton = sender as! UIButton
+           self.animateButtons(theButton)
         }
     }
     
     @IBAction func star5Tap(_ sender: Any) {
         if star5.isUserInteractionEnabled == true {
            star5.setImage(UIImage(named: "filledStar"), for: .normal)
+           let theButton = sender as! UIButton
+           self.animateButtons(theButton)
         }
     }
     

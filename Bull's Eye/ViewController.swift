@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var roundValue: UILabel!
     
+    @IBOutlet weak var hitMeConstraint: NSLayoutConstraint!
+    
     var currentValueOfSlider: Int = 0
     var targetScore: Int = 0
     var currentRound: Int = 0
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         self.scoreValue.text = "0"
         self.startNextRound()
         self.styleSlider()
+        self.hitMeConstraint.constant-=view.bounds.width
         
     }
     
