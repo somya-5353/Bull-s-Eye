@@ -406,6 +406,8 @@
                         <viewLayoutGuide key="safeArea" id="2dt-6S-irF"/>
                     </view>
                     <connections>
+                        <outlet property="closeConstraint" destination="d94-Gd-gHD" id="qFJ-IP-rvs"/>
+                        <outlet property="doneConstraint" destination="x2j-59-tsC" id="l1D-YO-kCF"/>
                         <outlet property="star1" destination="F6p-IX-4Xu" id="zSh-YU-BHP"/>
                         <outlet property="star2" destination="x3v-cf-FD5" id="Gu3-rw-4NN"/>
                         <outlet property="star3" destination="7Zc-dV-nGd" id="3d9-uC-DT5"/>

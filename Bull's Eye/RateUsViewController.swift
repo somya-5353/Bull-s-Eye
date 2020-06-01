@@ -16,6 +16,9 @@ class RateUsViewController: UIViewController {
     @IBOutlet weak var star2: UIButton!
     @IBOutlet weak var star5: UIButton!
     
+    @IBOutlet weak var doneConstraint: NSLayoutConstraint!
+    @IBOutlet weak var closeConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         star1.isUserInteractionEnabled = true
@@ -24,6 +27,28 @@ class RateUsViewController: UIViewController {
         star4.isUserInteractionEnabled = false
         star5.isUserInteractionEnabled = false
         // Do any additional setup after loading the view.
+        
+        doneConstraint.constant-=view.bounds.width
+        closeConstraint.constant-=view.bounds.width
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.animateButtons()
+    }
+    
+    //function to animate the buttons
+    func animateButtons() {
+        UIView.animate(withDuration: 1.5, delay: 0.5, options: .transitionCurlUp, animations: {
+            self.doneConstraint.constant+=self.view.bounds.width
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 1, delay: 1.5, options: .curveEaseOut, animations: {
+            self.closeConstraint.constant+=self.view.bounds.width
+        }, completion: nil)
+        
+        self.view.layoutIfNeeded()
+        
     }
     
     @IBAction func close(_ sender: Any) {
